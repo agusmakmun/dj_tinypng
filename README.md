@@ -1,4 +1,4 @@
-:sunglasses: Implement API TinyPNG on Django. The basic implementation to optimization of the images using API TinyPNG.
+:coffee: Implement API TinyPNG on Django. The basic implementation to optimization of the images using API TinyPNG.
 
 > Please Checkout on this official to get the API https://tinypng.com/developers
 > Docs API: https://tinypng.com/developers/reference/python
