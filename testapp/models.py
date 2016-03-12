@@ -20,7 +20,7 @@ class Photo(models.Model):
         return self.title
 
     def get_image_optimized(self):
-        """In your templates: {{ get_image_optimized }}"""
+        """In your templates: {{ photo.get_image_optimized }}"""
         if self.auto_delete == True:
             return str(self.photo.url)
         return str(os.path.splitext(str(self.photo.url))[0])+'_optimized_' + str(os.path.splitext(str(self.photo.url))[1])
