@@ -47,11 +47,11 @@ $ ./manage.py runserver
 * [Please Check this path](https://github.com/agusmakmun/dj_tinypng/tree/master/gallery/photos/2016/03/12/)
 
 ###Usage on Templates
-You can use it with `{{ get_image_optimized }}` on your templates, it will auto return image optimized. Please check this function in `tesapp/models.py` for more.
+You can use it with `{{ photo.get_image_optimized }}` on your templates, it will auto return image optimized. Please check this function in `tesapp/models.py` for more.
 
 ```python
 def get_image_optimized(self):
-    """In your templates: {{ get_image_optimized }}"""
+    """In your templates: {{ photo.get_image_optimized }}"""
     if self.auto_delete == True:
         return str(self.photo.url)
     return str(os.path.splitext(str(self.photo.url))[0])+'_optimized_' + str(os.path.splitext(str(self.photo.url))[1])
